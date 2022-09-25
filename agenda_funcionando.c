@@ -89,7 +89,7 @@ void apaga(){
             }                
         }
     }
-    if(sai_do_loop == 0){
+    if(pessoa_apagada[y]==*((char*)pBuffer+y+n*tamanho_inicial)){
         for(int x=n;x<n_pessoas;x++){
             for(int g=0;g<10;g++){
                 *((char*)pBuffer + x*tamanho_inicial + g*sizeof(char)) = *((char*)(pBuffer + (x+1)*tamanho_inicial + g*sizeof(char)));
